@@ -2,6 +2,7 @@ import { addUser, fetchUsers } from "../store";
 
 import Button from "./Button";
 import Skeleton from "./Skeleton";
+import UserListItem from "./UsersListItem";
 import { useEffect } from "react";
 import { useSelector } from "react-redux";
 import { useThunk } from "../hooks/useThunk";
@@ -28,15 +29,7 @@ export default function UsersList() {
   } else if (loadingUsersError) {
     content = <div>Error fetching data...</div>;
   } else {
-    content = data.map((user) => {
-      return (
-        <div key={user.id} className="mb-2 border rounded">
-          <div className="flex p-2 justify-between items-center cursor-pointer">
-            {user.name}
-          </div>
-        </div>
-      );
-    });
+    content = data.map((user) => <UserListItem key={user.id} user={user} />);
   }
 
   return (
