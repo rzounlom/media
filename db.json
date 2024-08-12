@@ -23,11 +23,6 @@
   ],
   "albums": [
     {
-      "id": "48ca",
-      "userId": "722e",
-      "title": "Incredible Bronze Bacon"
-    },
-    {
       "id": "2746",
       "userId": "1807",
       "title": "Oriental Concrete Mouse"
@@ -36,16 +31,6 @@
       "id": "5a1e",
       "userId": "1807",
       "title": "Licensed Soft Towels"
-    },
-    {
-      "id": "7e2c",
-      "userId": "722e",
-      "title": "Fantastic Cotton Car"
-    },
-    {
-      "id": "cf24",
-      "userId": "722e",
-      "title": "Rustic Concrete Towels"
     },
     {
       "id": "d6e0",
@@ -61,16 +46,6 @@
       "id": "50b8",
       "userId": "1807",
       "title": "Rustic Fresh Computer"
-    },
-    {
-      "id": "da4b",
-      "userId": "722e",
-      "title": "Gorgeous Steel Chair"
-    },
-    {
-      "id": "7b1c",
-      "userId": "722e",
-      "title": "Oriental Fresh Mouse"
     },
     {
       "id": "125a",
