@@ -15,7 +15,7 @@ export default function AlbumsList({ user }) {
   let content;
 
   if (isLoading) {
-    content = <Skeleton times={3} />;
+    content = <Skeleton times={3} className="h-10 w-full" />;
   } else if (error) {
     content = <div>Error: loading Albums</div>;
   } else {
@@ -27,10 +27,17 @@ export default function AlbumsList({ user }) {
   }
   return (
     <div>
-      <div>Albums for {user.name}</div>
-      <Button onClick={handleAddAlbum} disabled={results.isLoading}>
-        + Add Album
-      </Button>
+      <div className="m-2 flex flex-row items-center justify-between">
+        <h3 className="text-lg font-bold">Albums for {user.name}</h3>
+        <Button
+          onClick={handleAddAlbum}
+          disabled={results.isLoading}
+          loading={results.isLoading}
+        >
+          + Add Album
+        </Button>
+      </div>
+
       <div>{content}</div>
     </div>
   );

@@ -2,9 +2,19 @@ import { createApi, fetchBaseQuery } from "@reduxjs/toolkit/query/react";
 
 import { faker } from "@faker-js/faker";
 
+function pause(ms) {
+  return new Promise((resolve) => setTimeout(resolve, ms));
+}
+
 export const albumsApi = createApi({
   reducerPath: "albums",
-  baseQuery: fetchBaseQuery({ baseUrl: "http://localhost:3005" }),
+  baseQuery: fetchBaseQuery({
+    baseUrl: "http://localhost:3005",
+    fetchFunc: async (...args) => {
+      await pause(2000);
+      return fetch(...args);
+    },
+  }),
   endpoints(builder) {
     return {
       addAlbum: builder.mutation({
