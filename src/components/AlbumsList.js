@@ -2,7 +2,6 @@ import { useAddAlbumMutation, useFetchAlbumsQuery } from "../store";
 
 import AlbumsListItem from "./AlbumsListItem";
 import Button from "./Button";
-import ExpandablePanel from "./ExpandablePanel";
 import Skeleton from "./Skeleton";
 
 export default function AlbumsList({ user }) {

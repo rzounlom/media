@@ -56,17 +56,23 @@
       "id": "e961",
       "userId": "722e",
       "title": "Small Wooden Mouse"
-    },
-    {
-      "id": "e37e",
-      "userId": "722e",
-      "title": "Handmade Rubber Chicken"
-    },
-    {
-      "id": "28e6",
-      "userId": "722e",
-      "title": "Ergonomic Concrete Soap"
     }
   ],
-  "photos": []
+  "photos": [
+    {
+      "id": "2406",
+      "albumId": "e961",
+      "url": "https://loremflickr.com/150/150/abstract?lock=54158"
+    },
+    {
+      "id": "369f",
+      "albumId": "e961",
+      "url": "https://loremflickr.com/150/150/abstract?lock=83819"
+    },
+    {
+      "id": "b41d",
+      "albumId": "e961",
+      "url": "https://loremflickr.com/150/150/abstract?lock=29095"
+    }
+  ]
 }
