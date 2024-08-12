@@ -21,6 +21,22 @@
       "name": "Leonard Sauer"
     }
   ],
-  "albums": [],
+  "albums": [
+    {
+      "id": "48ca",
+      "userId": "722e",
+      "title": "Incredible Bronze Bacon"
+    },
+    {
+      "id": "2746",
+      "userId": "1807",
+      "title": "Oriental Concrete Mouse"
+    },
+    {
+      "id": "5a1e",
+      "userId": "1807",
+      "title": "Licensed Soft Towels"
+    }
+  ],
   "photos": []
 }
